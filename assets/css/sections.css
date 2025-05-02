@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mandali&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika:wght@300..700&display=swap');
+
+
+/*PRIMEIRA SECTION DE APRESENTACAO*/
+.section1 {
+    width: 100%;
+    height: auto;
+}
+
+.containerBoasVindas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.textBoasVindas {
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.textBoasVindas span {
+    font-weight: 500;
+    color: #ff7b00;
+}
+
+#data {
+    margin-left: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+/*SEGUNDA SECTION DE BANNER*/
+
+.section2 {
+    width: 100%;
+    height: 250px;
+    display: flex;
+}
+
+.containerBanner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerBanner img {
+    width: 90%;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/*TERCEIRA SECTION DE PESQUISA*/
+
+.section3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search-bar {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+    background-color: white;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin: auto;
+}
+
+.guest-selection {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-right: 1px solid #f5a623;
+    color: black;
+}
+
+#guest-info {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+#guest-button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ff7b00;
+}
+
+.search-button {
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.guest-card {
+    display: none;
+    background-color: white;
+    border: 1px solid #f5a623;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    margin-top: 10px;
+    width: 300px;
+    position: relative;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.guest-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+}
+
+.counter-btn {
+    background-color: #ff7b00;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.calendar-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    max-width: 320px;
+    z-index: 100;
+}
+
+.calendar-selection {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-left: 12px;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 0.8rem;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.day {
+    padding: 6px 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.day:hover {
+    background-color: #ccc;
+}
+
+.date-start {
+    background-color: #4caf50 !important;
+    color: white;
+}
+
+.date-end {
+    background-color: #f44336 !important;
+    color: white;
+}
+
+
+/*QUARTA SECTION DE CARDS*/
+
+.section4 {
+    width: 100%;
+    height: auto;
+}
+
+.servicos {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+
+.containerCardsServicoes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.card-title {
+    color: black;
+    font-size: 16px;
+    margin: 0;
+}
+
+.card-description {
+    color: #6d6d6d;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    color: #ff7b00;
+}
+
+.card-button {
+    background-color: #272626;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s;
+}
+
+.card-button:hover {
+    background-color: #555555;
+}
+
+.section5 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textSobre {
+    color: aliceblue;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-align: start;
+}
+
+/* Estilo do fundo escurecido */
+.popup-overlay {
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Estilo do card */
+.popup-card {
+    background: #eee;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.popup-card input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.popup-card button {
+    padding: 0.8rem;
+    width: 100%;
+    background-color: #ff7b00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cart-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff7b00;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 86%; /* Ajuste se seu header for maior ou menor */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.cart-banner .left {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.bag-icon {
+  font-size: 24px;
+}
+
+.cart-badge {
+  background-color: white;
+  color: #ff7b00;
+  border-radius: 50%;
+  padding: 3px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: -8px;
+  left: 16px;
+}
