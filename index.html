@@ -17,7 +17,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-    <title>Menu responsive</title>
+    <link rel="icon" href="assets/img/logoPorto.png" type="image/png">
+    <title>Hotel Porto da Lua</title>
 </head>
 
 <body>
@@ -82,7 +83,7 @@
     <section class="section1" id="inicio">
         <div class="containerBoasVindas">
             <h2 class="textBoasVindas">Ola, <span>seja bem vindo a nossa plataforma</span></h2>
-            <div id="data"></div>
+            <div class="data" id="data"></div>
         </div>
     </section>
 
@@ -93,46 +94,46 @@
     </section>
 
     <section class="section3">
-        <div class="search-bar" id="search-bar">
-            <div class="guest-selection">
-                <span id="guest-info">2 adultos · 0 criança · 1 quarto</span>
-                <button id="guest-button">▼</button>
+        <div class="booking-card">
+            <div class="calendar-selection" id="calendar-selection">
+              <span id="date-text">Quando?</span>
             </div>
-            <button class="search-button" id="apply-button">Aplicar</button>
-        </div>
-
-        <!-- Card fica AQUI fora da search-bar -->
-        <div class="guest-card" id="guest-card">
-            <div class="guest-option">
+            <div class="calendar-container" id="calendar" style="display: none;"></div>
+        
+            <div class="guest-selection">
+              <span id="guest-info">2 adultos · 0 criança · 1 quarto</span>
+              <button id="guest-button">▼</button>
+            </div>
+        
+            <div class="guest-card" id="guest-card">
+              <div class="guest-option">
                 <span>Adultos</span>
                 <div class="counter">
-                    <button class="counter-btn" id="adult-decrease">-</button>
-                    <span id="adult-count">2</span>
-                    <button class="counter-btn" id="adult-increase">+</button>
+                  <button class="counter-btn" id="adult-decrease">-</button>
+                  <span id="adult-count">2</span>
+                  <button class="counter-btn" id="adult-increase">+</button>
                 </div>
-            </div>
-            <div class="guest-option">
+              </div>
+              <div class="guest-option">
                 <span>Crianças</span>
                 <div class="counter">
-                    <button class="counter-btn" id="child-decrease">-</button>
-                    <span id="child-count">0</span>
-                    <button class="counter-btn" id="child-increase">+</button>
+                  <button class="counter-btn" id="child-decrease">-</button>
+                  <span id="child-count">0</span>
+                  <button class="counter-btn" id="child-increase">+</button>
                 </div>
-            </div>
-            <div class="guest-option">
+              </div>
+              <div class="guest-option">
                 <span>Quartos</span>
                 <div class="counter">
-                    <button class="counter-btn" id="room-decrease">-</button>
-                    <span id="room-count">1</span>
-                    <button class="counter-btn" id="room-increase">+</button>
+                  <button class="counter-btn" id="room-decrease">-</button>
+                  <span id="room-count">1</span>
+                  <button class="counter-btn" id="room-increase">+</button>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="calendar-selection" id="calendar-selection">
-            <span id="date-text">Quando?</span>
-        </div>
-        <!-- Calendário abaixo do search-bar -->
-        <div class="calendar-container" id="calendar" style="display: none;"></div>
+        
+            <button class="check-button" id="apply-button">Aplique</button>
+          </div>
     </section>
 
 

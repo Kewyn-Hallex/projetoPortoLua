@@ -22,13 +22,16 @@
 
 .textBoasVindas span {
     font-weight: 500;
-    color: #ff7b00;
+    background: linear-gradient(90deg, #0D6EFD, #8B5CF6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #data {
     margin-left: 30px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 /*SEGUNDA SECTION DE BANNER*/
@@ -63,64 +66,55 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 
-.search-bar {
-    display: flex;
-    border-radius: 10px;
-    overflow: hidden;
-    width: fit-content;
+.booking-card {
     background-color: white;
-    border: rgba(0, 0, 0, 0.2) 1px solid;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    margin: auto;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 95%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    align-items: center;
 }
 
 .guest-selection {
-    font-family: 'Poppins', sans-serif;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 14px 16px;
+    border-radius: 12px;
     cursor: pointer;
-    border-right: 1px solid #f5a623;
-    color: black;
-}
-
-#guest-info {
-    margin-right: 8px;
-    font-size: 14px;
+    background-color: #fafafa;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 #guest-button {
     background: none;
     border: none;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
-    color: #ff7b00;
-}
-
-.search-button {
-    background-color: #ff7b00;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-weight: bold;
 }
 
 .guest-card {
     display: none;
     background-color: white;
-    border: 1px solid #f5a623;
+    border: 1px solid #0D6EFD;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 10px rgba(13, 110, 253, 0.4);
     padding: 15px;
     margin-top: 10px;
     width: 300px;
     position: relative;
     color: black;
-    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .guest-option {
@@ -136,15 +130,34 @@
 }
 
 .counter-btn {
-    background-color: #ff7b00;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: none;
-    color: white;
+    color: black;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
     margin: 0 5px;
+}
+
+.check-button {
+    background-color: #0D6EFD;
+    color: white;
+    padding: 10px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: background 0.3s;
+}
+
+.check-button:hover {
+    background-color: #6366F1;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    transition: 500ms;
 }
 
 .calendar-container {
@@ -162,19 +175,20 @@
 }
 
 .calendar-selection {
-    cursor: pointer;
-    background-color: #f2f2f2;
-    padding: 8px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 100px;
     border-radius: 8px;
+    background-color: white;
     margin-left: 12px;
-    user-select: none;
-    font-family: 'Poppins', sans-serif;
     margin-top: 10px;
-    width: 50%;
-    text-align: center;
+    width: 60%;
     font-size: 0.8rem;
-    border: rgba(0, 0, 0, 0.2) 1px solid;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .day {
@@ -210,11 +224,11 @@
 }
 
 .servicos {
-    color: rgba(255, 255, 255, 0.5);
+    color: #5a636a;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1rem;
-    margin-left: 1.5rem;
+    padding: 30px 20px;
 }
 
 .containerCardsServicoes {
@@ -236,8 +250,8 @@
     align-items: center;
     padding: 10px;
     gap: 10px;
-    width: 90%;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .card-image {
@@ -273,11 +287,13 @@
 }
 
 .card-price {
-    color: #ff7b00;
+    color: #2ECC71;
+    font-weight: 500;
 }
 
 .card-button {
-    background-color: #272626;
+    background-color: #0D6EFD;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     color: white;
     border: none;
     padding: 7px 15px;
@@ -290,6 +306,8 @@
 .card-button:hover {
     background-color: #555555;
 }
+
+/*SECTION 5 PARA CARRINHO*/
 
 .section5 {
     width: 100%;
@@ -346,7 +364,7 @@
 .popup-card button {
     padding: 0.8rem;
     width: 100%;
-    background-color: #ff7b00;
+    background-color: #0D6EFD;
     color: white;
     border: none;
     border-radius: 8px;
@@ -354,40 +372,40 @@
 }
 
 .cart-banner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ff7b00;
-  color: #fff;
-  padding: 10px 20px;
-  font-weight: bold;
-  position: fixed;
-  top: 86%; /* Ajuste se seu header for maior ou menor */
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  font-family: sans-serif;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ea2340;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    position: fixed;
+    top: 86%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .cart-banner .left {
-  display: flex;
-  align-items: center;
-  position: relative;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .bag-icon {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .cart-badge {
-  background-color: white;
-  color: #ff7b00;
-  border-radius: 50%;
-  padding: 3px 8px;
-  font-size: 14px;
-  font-weight: bold;
-  position: absolute;
-  top: -8px;
-  left: 16px;
+    background-color: white;
+    color: #ea2340;
+    border-radius: 50%;
+    padding: 3px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: -8px;
+    left: 16px;
 }

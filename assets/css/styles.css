@@ -9,7 +9,7 @@
   /*========== Colors ==========*/
   --hue: 174;
   --sat: 63%;
-  --first-color: #ff7b00;
+  --first-color: #0D6EFD;
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 8%, 35%);
