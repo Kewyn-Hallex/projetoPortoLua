@@ -22,217 +22,200 @@
 </head>
 
 <body>
-    <div id="intro">
-        <img src="assets/img/introPorto.png" alt="Logo Porto da Lua" class="logoIntro" />
-    </div>
-    <div id="site-content" style="display: none;">
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo"><img class="logo" src="assets/img/logoPorto.png"></a>
-        </header>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"><img class="logo" src="assets/img/logoPorto.png"></a>
 
-        <!-- Banner da sacola -->
-        <a href="cart.html">
-            <div id="cart-banner" style="display: none;" class="cart-banner">
-                <div class="left">
-                    <span class="bag-icon"><i class='bx bxs-calendar'></i></span>
-                    <span class="cart-badge" id="cart-count-badge">0</span>
-                </div>
-                <span class="view-cart">Ver Reserva</span>
-                <span class="cart-total" id="cart-total">R$ 0,00</span>
+    </header>
+    <!-- Banner da sacola -->
+    <a href="cart.html">
+        <div id="cart-banner" style="display: none;" class="cart-banner">
+            <div class="left">
+                <span class="bag-icon"><i class='bx bxs-calendar'></i></span>
+                <span class="cart-badge" id="cart-count-badge">0</span>
             </div>
-        </a>
-
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">
-                        <i class='bx bx-home-alt nav__icon'></i>
-                        <span class="nav__name">Home</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">
-                        <i class='bx bx-user nav__icon'></i>
-                        <span class="nav__name">About</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="cart.html" class="nav__link">
-                        <i class='bx bxs-calendar nav__icon'></i>
-                        <span class="nav__name">Reserva</span>
-                    </a>
-                </li>
-            </ul>
+            <span class="view-cart">Ver Reserva</span>
+            <span class="cart-total" id="cart-total">R$ 0,00</span>
         </div>
+    </a>
 
-        <img src="assets/img/perfil.png" alt="" class="nav__img">
-        </nav>
-        </header>
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="#home" class="nav__link active-link">
+                    <i class='bx bx-home-alt nav__icon'></i>
+                    <span class="nav__name">Home</span>
+                </a>
+            </li>
 
-        <div id="popup-card" class="popup-overlay">
-            <div class="popup-card">
-                <h2>Preencha seus dados</h2>
-                <form id="user-form">
-                    <input type="text" id="user-name" placeholder="Seu nome" required />
-                    <input type="tel" id="user-phone" placeholder="Telefone com DDD(WhatsApp)" required />
-                    <button type="submit">Confirmar</button>
-                </form>
+            <li class="nav__item">
+                <a href="#about" class="nav__link">
+                    <i class='bx bx-user nav__icon'></i>
+                    <span class="nav__name">About</span>
+                </a>
+            </li>
+
+            <li class="nav__item">
+                <a href="cart.html" class="nav__link">
+                    <i class='bx bxs-calendar nav__icon'></i>
+                    <span class="nav__name">Reserva</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <img src="assets/img/perfil.png" alt="" class="nav__img">
+    </nav>
+    </header>
+
+    <div id="popup-card" class="popup-overlay">
+        <div class="popup-card">
+            <h2>Preencha seus dados</h2>
+            <form id="user-form">
+                <input type="text" id="user-name" placeholder="Seu nome" required />
+                <input type="tel" id="user-phone" placeholder="Telefone com DDD(WhatsApp)" required />
+                <button type="submit">Confirmar</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="section1" id="inicio">
+        <div class="containerBoasVindas">
+            <h2 class="textBoasVindas">Ola, <span>seja bem vindo a nossa plataforma</span></h2>
+            <div class="data" id="data"></div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="containerBanner">
+            <img src="assets/img/entradaPorto.png">
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="booking-card">
+            <div class="calendar-selection" id="calendar-selection">
+              <span id="date-text">Quando?</span>
+            </div>
+            <div class="calendar-container" id="calendar" style="display: none;"></div>
+        
+            <div class="guest-selection">
+              <span id="guest-info">2 adultos · 0 criança · 1 quarto</span>
+              <button id="guest-button">▼</button>
+            </div>
+        
+            <div class="guest-card" id="guest-card">
+              <div class="guest-option">
+                <span>Adultos</span>
+                <div class="counter">
+                  <button class="counter-btn" id="adult-decrease">-</button>
+                  <span id="adult-count">2</span>
+                  <button class="counter-btn" id="adult-increase">+</button>
+                </div>
+              </div>
+              <div class="guest-option">
+                <span>Crianças</span>
+                <div class="counter">
+                  <button class="counter-btn" id="child-decrease">-</button>
+                  <span id="child-count">0</span>
+                  <button class="counter-btn" id="child-increase">+</button>
+                </div>
+              </div>
+              <div class="guest-option">
+                <span>Quartos</span>
+                <div class="counter">
+                  <button class="counter-btn" id="room-decrease">-</button>
+                  <span id="room-count">1</span>
+                  <button class="counter-btn" id="room-increase">+</button>
+                </div>
+              </div>
+            </div>
+        
+            <button class="check-button" id="apply-button">Aplique</button>
+          </div>
+    </section>
+
+
+    <section class="section4">
+        <h6 class="servicos">QUARTOS</h6>
+
+        <div class="containerCardsServicoes">
+            <div class="card">
+                <img src="assets/img/quartoPorto.jpeg" alt="Corte de cabelo" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Quarto Casal</h3>
+                    <p class="card-description">Ideal para uma estadia relaxante.<br>Diária:</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 170,00</span>
+                        <button class="card-button">Reservar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/quarto2Porto.jpeg" alt="Corte de cabelo" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Casal Frente Mar</h3>
+                    <p class="card-description">com vista incrível e todo o conforto para sua estadia.<br>Diária:</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 260,00</span>
+                        <button class="card-button">Reservar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/quartoPorto.jpeg" alt="Corte de cabelo" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Quarto Triplo</h3>
+                    <p class="card-description">Espaçoso e aconchegante, perfeito para famílias ou grupos.<br>Diária:
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 240,00</span>
+                        <button class="card-button">Reservar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/quarto2Porto.jpeg" alt="Corte de cabelo" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Triplo Frente Mar</h3>
+                    <p class="card-description">Espaço, conforto e uma vista deslumbrante.<br>Diária:</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 320,00</span>
+                        <button class="card-button">Reservar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/quartoPorto.jpeg" alt="Corte de cabelo" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Quarto Quadruplo</h3>
+                    <p class="card-description">amplo e confortável, ideal para famílias ou grupos maiores.<br>Diária:
+                    </p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 300,00</span>
+                        <button class="card-button">Reservar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/img/quarto2Porto.jpeg" alt="Corte de cabelo" class="card-image">
+                <div class="card-content">
+                    <h3 class="card-title">Quadruplo Frente Mar</h3>
+                    <p class="card-description">Desperte com a brisa do mar. Espaçoso, perfeito para momentos
+                        inesquecíveis.<br>Diária:</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 380,00</span>
+                        <button class="card-button">Reservar</button>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <section class="section1" id="inicio">
-            <div class="containerBoasVindas">
-                <h2 class="textBoasVindas">Ola, <span>seja bem vindo a nossa plataforma</span></h2>
-                <div class="data" id="data"></div>
-            </div>
-        </section>
-
-        <section class="section2">
-            <div class="containerBanner">
-                <img src="assets/img/entradaPorto.png">
-            </div>
-        </section>
-
-        <section class="section3">
-            <div class="booking-card">
-                <div class="calendar-selection" id="calendar-selection">
-                    <span id="date-text">Quando?</span>
-                </div>
-                <div class="calendar-container" id="calendar" style="display: none;"></div>
-
-                <div class="guest-selection">
-                    <span id="guest-info">2 adultos · 0 criança · 1 quarto</span>
-                    <button id="guest-button">▼</button>
-                </div>
-
-                <div class="guest-card" id="guest-card">
-                    <div class="guest-option">
-                        <span>Adultos</span>
-                        <div class="counter">
-                            <button class="counter-btn" id="adult-decrease">-</button>
-                            <span id="adult-count">2</span>
-                            <button class="counter-btn" id="adult-increase">+</button>
-                        </div>
-                    </div>
-                    <div class="guest-option">
-                        <span>Crianças</span>
-                        <div class="counter">
-                            <button class="counter-btn" id="child-decrease">-</button>
-                            <span id="child-count">0</span>
-                            <button class="counter-btn" id="child-increase">+</button>
-                        </div>
-                    </div>
-                    <div class="guest-option">
-                        <span>Quartos</span>
-                        <div class="counter">
-                            <button class="counter-btn" id="room-decrease">-</button>
-                            <span id="room-count">1</span>
-                            <button class="counter-btn" id="room-increase">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="check-button" id="apply-button">Aplique</button>
-            </div>
-        </section>
-
-
-        <section class="section4">
-            <h6 class="servicos">QUARTOS</h6>
-
-            <div class="containerCardsServicoes">
-                <div class="card">
-                    <img src="assets/img/quartoPorto.jpeg" alt="Corte de cabelo" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Quarto Casal</h3>
-                        <p class="card-description">Ideal para uma estadia relaxante.<br>Diária:</p>
-                        <div class="card-footer">
-                            <span class="card-price">R$ 170,00</span>
-                            <button class="card-button">Reservar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/quarto2Porto.jpeg" alt="Corte de cabelo" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Casal Frente Mar</h3>
-                        <p class="card-description">com vista incrível e todo o conforto para sua estadia.<br>Diária:
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-price">R$ 260,00</span>
-                            <button class="card-button">Reservar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/quartoPorto.jpeg" alt="Corte de cabelo" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Quarto Triplo</h3>
-                        <p class="card-description">Espaçoso e aconchegante, perfeito para famílias ou
-                            grupos.<br>Diária:
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-price">R$ 240,00</span>
-                            <button class="card-button">Reservar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/quarto2Porto.jpeg" alt="Corte de cabelo" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Triplo Frente Mar</h3>
-                        <p class="card-description">Espaço, conforto e uma vista deslumbrante.<br>Diária:</p>
-                        <div class="card-footer">
-                            <span class="card-price">R$ 320,00</span>
-                            <button class="card-button">Reservar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/quartoPorto.jpeg" alt="Corte de cabelo" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Quarto Quadruplo</h3>
-                        <p class="card-description">amplo e confortável, ideal para famílias ou grupos
-                            maiores.<br>Diária:
-                        </p>
-                        <div class="card-footer">
-                            <span class="card-price">R$ 300,00</span>
-                            <button class="card-button">Reservar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/img/quarto2Porto.jpeg" alt="Corte de cabelo" class="card-image">
-                    <div class="card-content">
-                        <h3 class="card-title">Quadruplo Frente Mar</h3>
-                        <p class="card-description">Desperte com a brisa do mar. Espaçoso, perfeito para momentos
-                            inesquecíveis.<br>Diária:</p>
-                        <div class="card-footer">
-                            <span class="card-price">R$ 380,00</span>
-                            <button class="card-button">Reservar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section5" id="sobre">
-            <h6 class="servicos">SOBRE</h6>
-            <p class="textSobre">O Hotel Porto da Lua é o lugar perfeito para quem busca conforto e beleza natural em
-                Marudá. De frente para o mar, oferece quartos aconchegantes, piscina, restaurante e uma estrutura
-                completa
-                para quem deseja relaxar e curtir o melhor do litoral paraense.</p>
-        </section>
-    </div>
+    </section>
 
     <!-- ===== IONICONS ===== -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
     <!--===== MAIN JS =====-->
-    <script src="assets/js/intro.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/data.js"></script>
     <script src="assets/js/filtro.js"></script>
